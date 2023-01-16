@@ -2,7 +2,7 @@ const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const tailwindCss = require("tailwindcss");
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./public/index.js",
   output: {
     path: path.join(__dirname, "/dist"),
     filename: "bundle.js",
@@ -12,7 +12,7 @@ module.exports = {
   },
   plugins: [
     new HTMLWebpackPlugin({
-      template: "./src/index.html",
+      template: "./public/index.html",
     }),
   ],
 
